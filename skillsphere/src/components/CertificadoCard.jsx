@@ -6,6 +6,7 @@ function CertificadoCard(props) {
       <h2>{props.nombre}</h2>
       <p className="escuela">{props.escuela}</p>
       <p className="fecha">{props.fecha}</p>
+      <button onClick={props.onEliminar}>Eliminar</button>
     </div>
   )
 }
