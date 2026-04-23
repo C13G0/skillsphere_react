@@ -14,7 +14,7 @@ function VacanteCard(props) {
       <button onClick={() => setAplicado(true)} disabled={aplicado}>
         {aplicado ? "Aplicado" : "Aplicar"}
       </button>
-      <button onClick={props.onEliminar}>Eliminar</button>
+      <button className="btn-eliminar" onClick={props.onEliminar}>Eliminar</button>
     </div>
   )
 }
