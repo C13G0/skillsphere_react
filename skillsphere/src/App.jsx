@@ -2,20 +2,23 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Certificados from './views/Certificados'
+import Login from './views/Login'
+import Registro from './views/Registro'
+import Perfil from './views/Perfil'
 import './App.css'
 
 function App() {
   return (
     <div>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate to="/certificados" />} />
-        <Route path="/certificados" element={<Certificados />} />
-        <Route path="/vacantes" element={<div>Vacantes - próximamente</div>} />
-        <Route path="/perfil" element={<div>Perfil - próximamente</div>} />
-        <Route path="/academicos" element={<div>Académicos - próximamente</div>} />
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Registro />} />
+        <Route path="/certificados" element={<><Navbar /><Certificados /><Footer /></>} />
+        <Route path="/vacantes" element={<><Navbar /><div style={{padding:'48px'}}>Vacantes - próximamente</div><Footer /></>} />
+        <Route path="/perfil" element={<><Navbar /><Perfil /><Footer /></>} />
+        <Route path="/academicos" element={<><Navbar /><div style={{padding:'48px'}}>Académicos - próximamente</div><Footer /></>} />
       </Routes>
-      <Footer />
     </div>
   )
 }
