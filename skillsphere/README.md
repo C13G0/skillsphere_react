@@ -1,3 +1,39 @@
+# SkillSphere 🎓
+
+Plataforma educativa web donde los estudiantes pueden gestionar sus certificados académicos y explorar ofertas laborales.
+
+## Tecnologías usadas
+- React con Vite
+- React Router DOM
+- CSS
+
+## Integrantes
+- Andrés (GitHub: C13G0) → Vista de Certificados
+- Luisa (GitHub: luisausuga404) → Vista de Vacantes
+
+## Cómo correr el proyecto
+
+1. Clona el repositorio:
+git clone https://github.com/C13G0/skillsphere_react.git
+
+2. Entra a la carpeta del proyecto:
+cd skillsphere_react/skillsphere
+
+3. Instala las dependencias:
+npm install
+
+4. Corre el servidor:
+npm run dev
+
+5. Abre el navegador en:
+http://localhost:5173
+
+## Funcionalidades
+- Login y Registro de usuarios
+- Vista de Certificados con formulario para agregar y eliminar
+- Vista de Vacante
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
